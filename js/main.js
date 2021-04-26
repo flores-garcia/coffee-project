@@ -21,8 +21,8 @@ var coffees = [
 // Displays Coffee
 function renderCoffee(coffee) {
     var html = '<div class="coffee">';
-    html += '<div class= "name">' + coffee.name + '</div>';
-    html += '<div class= "roast">' + coffee.roast + '</div>';
+    html += '<h1>' + coffee.name + '</h1>';
+    html += '<p>' + coffee.roast + '</p>';
     html += '</div>';
 
     return html;
