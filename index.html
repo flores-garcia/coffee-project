@@ -7,15 +7,17 @@
 </head>
 <body>
     <h1>Coffee!</h1>
-
     <form>
-        <label for="roast-selection"></label>
+        <div class="coffeeSearch">
+            <label for="roast">Roast</label>
+            <input type="text" class="form-control" id="roast" placeholder="Select Your Roast!">
+        </div>
+        <input id="submit" type="submit" />
         <select id="roast-selection">
             <option>light</option>
             <option>medium</option>
             <option>dark</option>
         </select>
-        <input id="submit" type="submit" />
     </form>
 
     <table>
