@@ -18,6 +18,7 @@ var coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
+// Displays Coffee
 function renderCoffee(coffee) {
     var html = '<tr class="coffee">';
     html += '<td>' + coffee.name + '</td>';
@@ -27,7 +28,7 @@ function renderCoffee(coffee) {
     return html;
 }
 
-// Search form function
+// Ascending order
 function renderCoffees(coffees) {
     var html = '';
     for(var i = 0; i < coffees.length; i++) {
@@ -39,39 +40,29 @@ function renderCoffees(coffees) {
 function updateCoffeesAuto(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = nameSelection.value;
+    var selectedType = roastSelection.value;
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
-        if ((coffee.name.toLowerCase()).includes(selectedRoast.toLowerCase())) {
+        if ((coffee.name.toLowerCase()).includes(selectedRoast.toLowerCase()) && coffee.roast === selectedType) {
             filteredCoffees.push(coffee);
-        } else if (nameSelection.value === '') {
+        } else if (selectedType === 'all') {
             filteredCoffees.push(coffee)
         }
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
-// Submit button click
-function updateCoffees(e) {
-    e.preventDefault(); // don't submit the form, we just want to update the data
-    var selectedRoast = roastSelection.value;
-    var filteredCoffees = [];
-    coffees.forEach(function(coffee) {
-        if (coffee.roast === selectedRoast) {
-            filteredCoffees.push(coffee);
-        }
-    });
-    tbody.innerHTML = renderCoffees(filteredCoffees);
-}
 
+// Variables and events
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var nameSelection = document.querySelector('#name-selection');
 var roastSelection = document.querySelector('#roast-selection');
 
-
+// Do not delete
 tbody.innerHTML = renderCoffees(coffees);
 
-submitButton.addEventListener('click', updateCoffees);
+roastSelection.addEventListener('change', updateCoffeesAuto);
 nameSelection.addEventListener('keyup', updateCoffeesAuto);
 
 
