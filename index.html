@@ -20,15 +20,12 @@
         <a class="nav-item p-2" href="#">Shop</a>
     </div>
 </nav>
-<div class="container  w-75 p-1 topMargin d-row">
-
-    <div class="coffee-container col-12 text-center">
+<div class="p-0 m-3 row justify-content-space-around">
+<div class="container m-2 m-0 p-2 col-6">
+    <div class="coffee-container">
         <h2 class="build w-100 justify-content-start">Build your perfect cup of java</h2>
         <form>
-            <div class="coffeeSearch w-50 m-1 p-10 " id="coffeeSearch">
-                <label for="name-selection" class="col-1 m-1"></label><br>
-                <input type="text" class="form-control col-12 text-center" autocomplete = "off" id="name-selection" placeholder="Select Your Coffee!">
-            </div>
+            <h2 class="steps w-100">Step 1: Select your roast</h2>
             <label for="roast-selection"></label>
             <select id="roast-selection">
                 <option>all</option>
@@ -37,10 +34,30 @@
                 <option>dark</option>
             </select>
             <input id="submit" type="submit" />
+            <div class="coffeeSearch w-100 m-1 pb-3 " id="coffeeSearch">
+            <h2 class="steps w-100">Step 1: Select your brand</h2>
+                <label for="name-selection" class="col-1 m-1"></label><br>
+                <input type="text" class="form-control col-8 text-center" autocomplete = "off" id="name-selection" placeholder="Select Your Coffee!">
+            </div>
         </form>
-        <div id="coffees" >Coffees Here</div>
-        <div class="coffeeNames" id="name"></div>
-        <div id= "Roast" class="roast"></div>
+        </div>
+    </div>
+
+    <div class="card p-0 col-5">
+        <img class="card-img-top p-0" src="img/latte.jpg" alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text">
+            <div id="coffees" >Coffees Here</div>
+            <div class="coffeeNames" id="name"></div>
+            <div id= "Roast" class="roast"></div>
+            </p>
+        </div>
+    </div>
+
+
+<!--        <div id="coffees" >Coffees Here</div>-->
+<!--        <div class="coffeeNames" id="name"></div>-->
+<!--        <div id= "Roast" class="roast"></div>-->
     </div>
 </div>
 <script src="js/main.js"></script>

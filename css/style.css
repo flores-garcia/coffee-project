@@ -7,8 +7,8 @@ body {
     font-family: 'Viga', sans-serif;
 }
 .logo-coffee{
-    max-height: 68px;
-    max-width: 68px;
+    max-height: 70px;
+    max-width: 70px;
     margin: 0;
 }
 .coffeeNames {
@@ -19,20 +19,16 @@ body {
     color: #000000;
     font-size: 1em;
 }
-.topMargin {
-    margin-top: 0em;
-}
 .coffee-container{
-    /*border: 1px solid white;*/
-    background-color: #ffffff;
-    opacity: 65%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    height: 450px;
 }
 .nav-bg {
-    background-color: #ffffff;
-    opacity: 70%;
+    background-color: rgba(255, 255, 255, 0.7)
 }
 .slogan {
-    color: #ffffff;
+    color: #dddddd;
     text-align: center;
     font-size: 2.5em;
     font-weight: bold;
@@ -42,18 +38,17 @@ body {
     padding: 0;
 }
 .build {
-    color: #ffffff;
+    color: #dddddd;
     text-align: center;
     font-size: 2em;
     font-weight: bold;
     font-family: 'Special Elite', cursive;
     text-shadow:1px 5px 8px #000000, 1px 5px 8px #000000;
-    margin: 5px;
-    padding-top: 10px;
-    padding-bottom: 0;
+    padding: 0;
+
 }
 a{
-    color: #ffffff;
+    color: #d0d0d0;
     text-shadow:1px 1px 10px #000000, 1px 1px 10px #000000;
 }
 a:hover{
@@ -65,4 +60,20 @@ a:hover{
     -o-transition: 500ms linear 0s;
     transition: 500ms linear 0s;
     outline: 0 none;
+}
+.steps {
+    color: #dddddd;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    text-shadow:1px 5px 8px #000000, 1px 5px 8px #000000;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+.card-body {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    max-height: 300px;
 }
