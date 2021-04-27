@@ -18,6 +18,8 @@ var coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
+document.getElementById("coffees").style.display = "none";
+
 // Displays Coffee
 function renderCoffee(coffee) {
     var html = '<div class="coffee">';
@@ -50,6 +52,7 @@ function updateCoffeesAuto(e) {
         }
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
+    document.getElementById("coffees").style.display = "block";
 }
 
 
@@ -64,6 +67,7 @@ tbody.innerHTML = renderCoffees(coffees);
 
 roastSelection.addEventListener('change', updateCoffeesAuto);
 nameSelection.addEventListener('keyup', updateCoffeesAuto);
+submitButton.addEventListener("click", updateCoffeesAuto);
 
 
 

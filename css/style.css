@@ -41,6 +41,17 @@ body {
     margin: 0;
     padding: 0;
 }
+.build {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    text-shadow:1px 5px 8px #000000, 1px 5px 8px #000000;
+    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
 a{
     color: #ffffff;
     text-shadow:1px 1px 10px #000000, 1px 1px 10px #000000;
