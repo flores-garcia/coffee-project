@@ -22,10 +22,10 @@ body {
 .coffee-container{
     background-color: rgba(255, 255, 255, 0.7);
     padding: 5px;
-    height: 450px;
+    /*height: 450px;*/
 }
 .nav-bg {
-    background-color: rgba(255, 255, 255, 0.7)
+    background-color: rgba(255, 255, 255, 0.7);
 }
 .slogan {
     color: #dddddd;
@@ -76,4 +76,12 @@ a:hover{
     overflow-y: scroll;
     scroll-behavior: smooth;
     max-height: 300px;
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.select{
+    font-family: 'Viga', sans-serif;
+    font-size: 18px;
 }

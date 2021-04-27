@@ -9,7 +9,7 @@
 <body>
 
 
-
+<!--this is our nav bar-->
 <nav class="navbar navbar-expand nav-bg p-1 d-flex w-100">
     <a class="navbar-brand w-25" href="#"><img src="img/coffee-logo.png" class="logo-coffee ml-4"></a>
     <h2 class="slogan w-100 justify-content-start">Coffee is always a good idea</h2>
@@ -20,46 +20,50 @@
         <a class="nav-item p-2" href="#">Shop</a>
     </div>
 </nav>
-<div class="p-0 m-3 row justify-content-space-around">
-<div class="container m-2 m-0 p-2 col-6">
-    <div class="coffee-container">
-        <h2 class="build w-100 justify-content-start">Build your perfect cup of java</h2>
-        <form>
-            <h2 class="steps w-100">Step 1: Select your roast</h2>
-            <label for="roast-selection"></label>
-            <select id="roast-selection">
-                <option>all</option>
-                <option>light</option>
-                <option>medium</option>
-                <option>dark</option>
-            </select>
-            <input id="submit" type="submit" />
-            <div class="coffeeSearch w-100 m-1 pb-3 " id="coffeeSearch">
-            <h2 class="steps w-100">Step 1: Select your brand</h2>
-                <label for="name-selection" class="col-1 m-1"></label><br>
-                <input type="text" class="form-control col-8 text-center" autocomplete = "off" id="name-selection" placeholder="Select Your Coffee!">
+<!--this is our main content-->
+<div class= "container p-5 mx-auto">
+    <div class="row p-2">
+        <div class="coffee-container mr-2 col">
+            <h2 class="build w-100 justify-content-start">Build your perfect cup of java</h2>
+            <form>
+                <h2 class="steps w-100">Step 1: Select your roast
+                    <br>
+                    <label for="roast-selection"></label>
+                    <select class="select" id="roast-selection">
+                        <option>all</option>
+                        <option>light</option>
+                        <option>medium</option>
+                        <option>dark</option>
+                    </select>
+                </h2>
+<!--this is our coffee search bar-->
+<!--                <input id="submit" type="submit" />-->
+                <div class="coffeeSearch pb-3 text-center" id="coffeeSearch">
+                    <h2 class="steps w-100">Step 2: Select your brand</h2>
+                    <label for="name-selection" class="col-1 m-1"></label><br>
+                    <input type="text" class="form-control mx-auto text-center w-50" autocomplete = "off" id="name-selection" placeholder="Select Your Coffee!">
+                </div>
+            </form>
+        </div>
+<!--this displays the coffee-->
+        <div class="card p-0 ml-2 col">
+            <img class="card-img-top p-0" src="img/latte.jpg" alt="Card image cap">
+            <div class="card-body">
+                <div class="card-text">
+                    <div id="coffees" >Coffees Here</div>
+                    <div class="coffeeNames" id="name"></div>
+                    <div id= "Roast" class="roast"></div>
+                </div>
             </div>
-        </form>
         </div>
     </div>
-
-    <div class="card p-0 col-5">
-        <img class="card-img-top p-0" src="img/latte.jpg" alt="Card image cap">
-        <div class="card-body">
-            <p class="card-text">
-            <div id="coffees" >Coffees Here</div>
-            <div class="coffeeNames" id="name"></div>
-            <div id= "Roast" class="roast"></div>
-            </p>
-        </div>
-    </div>
+</div>
 
 
 <!--        <div id="coffees" >Coffees Here</div>-->
 <!--        <div class="coffeeNames" id="name"></div>-->
 <!--        <div id= "Roast" class="roast"></div>-->
-    </div>
-</div>
+
 <script src="js/main.js"></script>
 </body>
 </html>
