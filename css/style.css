@@ -1,36 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 body {
-    background-image: url(../img/latte.jpg);
+    background-image: url("../img/coffeebeans.jpg");
+    background-size: 100vw;
     background-attachment: fixed;
-    background-size: 200%;
+    font-family: 'Viga', sans-serif;
 }
-
-
-/*img {*/
-/*    max-height: 50%;*/
-/*    max-width: 100%;*/
-/*}*/
-
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
+.logo-coffee{
+    max-height: 68px;
+    max-width: 68px;
+    margin: 0;
 }
-
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
+.coffeeNames {
+    color: #000000;
+    font-size: 2em;
 }
-
-h1 {
-    font-family: 'Roboto', sans-serif;
-    border: 1px solid grey;
-    border-radius: 10px;
-    width: 40%;
-    color: navy;
-    background-color: white ;
+.roast {
+    color: #000000;
+    font-size: 1em;
 }
-
-p {
-    color: grey;
+.topMargin {
+    margin-top: 0em;
+}
+.coffee-container{
+    /*border: 1px solid white;*/
+    background-color: #ffffff;
+    opacity: 65%;
+}
+.nav-bg {
+    background-color: #ffffff;
+    opacity: 70%;
+}
+.slogan {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    text-shadow:1px 5px 8px #000000, 1px 5px 8px #000000;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #ffffff;
+    text-shadow:1px 1px 10px #000000, 1px 1px 10px #000000;
+}
+a:hover{
+    text-decoration: none;
+    color: #341e1a;
+    text-shadow: none;
+    -webkit-transition: 500ms linear 0s;
+    -moz-transition: 500ms linear 0s;
+    -o-transition: 500ms linear 0s;
+    transition: 500ms linear 0s;
+    outline: 0 none;
 }

@@ -7,38 +7,42 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="container">
-    <h1>Coffee!</h1>
-    <form>
-        <div class="coffeeSearch row m-1" id="coffeeSearch">
-            <label for="name-selection" class="col-1 m-1">Roast</label><br>
-            <input type="text" class="form-control col-6" id="name-selection" placeholder="Select Your Coffee!">
-        </div>
-        <label for="roast-selection"></label>
-        <select id="roast-selection">
-            <option>all</option>
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select>
-        <input id="submit" type="submit" />
-    </form>
 
-<!--    <table>-->
-<!--        <thead>-->
-<!--            <tr>-->
-<!--                <th>NAME</th>-->
-<!--                <th>ROAST</th>-->
-<!--            </tr>-->
-<!--        </thead>-->
-<!--        <tbody id="coffees"></tbody>-->
-<!--    </table>-->
-    <div id="coffees">Coffees Here</div>
-    <div class ="h1" id= "name">Coffee Name</div>
-    <div id= "Roast">Roast</div>
+
+
+<nav class="navbar navbar-expand nav-bg p-1 d-flex w-100">
+    <a class="navbar-brand w-25" href="#"><img src="img/coffee-logo.png" class="logo-coffee ml-4"></a>
+    <h2 class="slogan w-100 justify-content-start">Coffee is always a good idea.</h2>
+    <div class="navbar-nav">
+        <a class="nav-item p-2" href="#">Home</a>
+        <a class="nav-item p-2" href="#">Locations</a>
+        <a class="nav-item p-2" href="#">Pricing</a>
+        <a class="nav-item p-2" href="#">Shop</a>
+    </div>
+</nav>
+<div class="container  w-75 p-1 topMargin d-row">
+
+    <div class="coffee-container col-12 ml-auto">
+        <form>
+            <div class="coffeeSearch row m-1" id="coffeeSearch">
+                <label for="name-selection" class="col-1 m-1"></label><br>
+                <input type="text" class="form-control col-12" id="name-selection" placeholder="Select Your Coffee!">
+            </div>
+            <label for="roast-selection"></label>
+            <select id="roast-selection">
+                <option>all</option>
+                <option>light</option>
+                <option>medium</option>
+                <option>dark</option>
+            </select>
+            <input id="submit" type="submit" />
+        </form>
+        <div id="coffees">Coffees Here</div>
+        <div class="coffeeNames" id="name"></div>
+        <div id= "Roast" class="roast"></div>
+    </div>
 </div>
-    <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
-
 
