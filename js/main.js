@@ -23,12 +23,28 @@ document.getElementById("coffees").style.display = "none";
 // Displays Coffee
 function renderCoffee(coffee) {
     var html = '<div class="coffee">';
-    html += '<h2>' + coffee.name + '</h2>';
-    html += '<p>' + coffee.roast + '</p>';
+    html += '<div class="coffeeNames">' + coffee.name + '</h2>';
+    html += '<div class="roast">' + coffee.roast + '</p>';
     html += '</div>';
 
     return html;
 }
+
+// Adds new cofee
+function addNewBrew(e) {
+    e.preventDefault();
+    var newBrew = {};
+    newBrew.name = newCoffee.value;
+    newBrew.roast = newRoast.value;
+    newBrew.id = coffees.length + 1;
+    coffees.push(newBrew);
+    tbody.innerHTML = renderCoffees(coffees);
+    return tbody.innerHTML = renderCoffee(coffee);
+}
+
+
+
+
 
 // Ascending order
 function renderCoffees(coffees) {
@@ -57,8 +73,10 @@ function updateCoffeesAuto(e) {
 
 
 // Variables and events
+var newCoffee = document.querySelector('#newName')
+var newRoast = document.querySelector('#newRoast')
 var tbody = document.querySelector('#coffees');
-var submitButton = document.querySelector('#submit');
+var submitButton = document.querySelector('#submitBrew');
 var nameSelection = document.querySelector('#name-selection');
 var roastSelection = document.querySelector('#roast-selection');
 
@@ -68,6 +86,9 @@ tbody.innerHTML = renderCoffees(coffees);
 roastSelection.addEventListener('change', updateCoffeesAuto);
 nameSelection.addEventListener('keyup', updateCoffeesAuto);
 submitButton.addEventListener("click", updateCoffeesAuto);
+
+tbody.innerHTML = renderCoffees(coffees);
+
 
 
 

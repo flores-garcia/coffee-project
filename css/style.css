@@ -13,11 +13,11 @@ body {
 }
 .coffeeNames {
     color: #000000;
-    font-size: 2em;
+    font-size: 28px;
 }
 .roast {
     color: #000000;
-    font-size: 1em;
+    font-size: 20px;
 }
 .coffee-container{
     background-color: rgba(255, 255, 255, 0.7);
@@ -68,7 +68,7 @@ a:hover{
     font-weight: bold;
     font-family: 'Special Elite', cursive;
     text-shadow:1px 5px 8px #000000, 1px 5px 8px #000000;
-    margin-top: 15px;
+    margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 0;
 }

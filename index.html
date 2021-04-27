@@ -29,7 +29,7 @@
                 <h2 class="steps w-100">Step 1: Select your roast
                     <br>
                     <label for="roast-selection"></label>
-                    <select class="select" id="roast-selection">
+                    <select class="select mt-3" id="roast-selection">
                         <option>all</option>
                         <option>light</option>
                         <option>medium</option>
@@ -37,13 +37,29 @@
                     </select>
                 </h2>
 <!--this is our coffee search bar-->
-<!--                <input id="submit" type="submit" />-->
-                <div class="coffeeSearch pb-3 text-center" id="coffeeSearch">
+                <div class="coffeeSearch pb-3 text-center mt-0" id="coffeeSearch">
                     <h2 class="steps w-100">Step 2: Select your brand</h2>
                     <label for="name-selection" class="col-1 m-1"></label><br>
                     <input type="text" class="form-control mx-auto text-center w-50" autocomplete = "off" id="name-selection" placeholder="Select Your Coffee!">
                 </div>
             </form>
+<!--            Add new coffee-->
+            <h2 class="steps w-100">Suggest a new brew!</h2>
+            <form class="text-center">
+            <input type="text" id="newName" class="text-center" placeholder="New Brew suggestion">
+                <label for="newRoast"></label>
+                <select class="" id="newRoast">
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
+                </select>
+                <button id="submitBrew" class="form-control " type="submit">Start your brew!</button>
+
+
+            </form>
+
+
+
         </div>
 <!--this displays the coffee-->
         <div class="card p-0 ml-2 col">
