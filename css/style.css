@@ -12,6 +12,7 @@ body {
     margin: 0;
 }
 .coffeeNames {
+    font-family: 'Special Elite', cursive;
     color: #000000;
     font-size: 28px;
 }
@@ -23,6 +24,9 @@ body {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 5px;
     /*height: 450px;*/
+}
+.container-fluid {
+    padding: 25px 25px 5px;
 }
 .nav-bg {
     background-color: rgba(255, 255, 255, 0.7);
@@ -67,7 +71,7 @@ a:hover{
     font-size: 25px;
     font-weight: bold;
     font-family: 'Special Elite', cursive;
-    text-shadow:1px 5px 8px #000000, 1px 5px 8px #000000;
+    text-shadow:1px 0px 15px #000000, 1px 0px 15px #000000;
     margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 0;
@@ -75,13 +79,55 @@ a:hover{
 .card-body {
     overflow-y: scroll;
     scroll-behavior: smooth;
-    max-height: 300px;
+    max-height: 250px;
 }
-.card {
+
+.card-body::-webkit-scrollbar {
+    display: none;
+}
+
+.cardDisplay {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
 .select{
     font-family: 'Viga', sans-serif;
     font-size: 18px;
+    border: none;
+}
+.brewButton {
+    background-color: #8b1d31;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+}
+.cardText {
+    padding: 5px 5px 0;
+    margin-bottom: 0;
+}
+.cardTextSmall {
+    font-size: 5px;
+}
+.scrolling-wrapper {
+    width: 80vw;
+    height: 130px;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: white;
+    margin-bottom: 10px;
+    opacity: 80%;
+}
+.card {
+    display: inline-block;
+    border: none;
+    margin-bottom: 10px;
+}
+.card::-webkit-scrollbar {
+    display: none;
+}
+.costa {
+    max-height: 100px;
+    max-width: 105px;
+    margin-top: 10px;
+    padding: 0 10px 0 10px;
 }

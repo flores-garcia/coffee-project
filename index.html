@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Costa Coffee</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,64 +21,68 @@
     </div>
 </nav>
 <!--this is our main content-->
-<div class= "container p-5 mx-auto">
+<div class= "container-fluid mx-auto">
     <div class="row p-2">
-        <div class="coffee-container mr-2 col">
+        <div class="coffee-container mr-4 col-6 p-3">
             <h2 class="build w-100 justify-content-start">Build your perfect cup of java</h2>
+            <p>Build your coffee from scratch and we will have it ready for pick-up in 20 minutes or less!*</p>
             <form>
-                <h2 class="steps w-100">Step 1: Select your roast
-                    <br>
+                <h2 class="steps w-100 mb-4">Step 1: Select your roast <br>
                     <label for="roast-selection"></label>
-                    <select class="select mt-3" id="roast-selection">
+                    <select class="select mt-3 w-50" id="roast-selection">
                         <option>all</option>
                         <option>light</option>
                         <option>medium</option>
                         <option>dark</option>
                     </select>
+                    <br>
                 </h2>
 <!--this is our coffee search bar-->
                 <div class="coffeeSearch pb-3 text-center mt-0" id="coffeeSearch">
-                    <h2 class="steps w-100">Step 2: Select your brand</h2>
+                    <h2 class="steps w-100 m-0">Step 2: Search for your brand</h2>
                     <label for="name-selection" class="col-1 m-1"></label><br>
-                    <input type="text" class="form-control mx-auto text-center w-50" autocomplete = "off" id="name-selection" placeholder="Select Your Coffee!">
+                    <input type="text" class="select form-control mx-auto text-center w-50" autocomplete = "off" id="name-selection" placeholder="Type your Brew Name!">
                 </div>
+<!--                Button-->
+                <button type="button" class="btn brewButton d-flex ml-auto" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    Select creamer, flavors & sizes ▶
+                </button><br>
             </form>
 <!--            Add new coffee-->
             <h2 class="steps w-100">Suggest a new brew!</h2>
             <form class="text-center">
-            <input type="text" id="newName" class="text-center" placeholder="New Brew suggestion">
-                <label for="newRoast"></label>
-                <select class="" id="newRoast">
-                    <option>light</option>
-                    <option>medium</option>
-                    <option>dark</option>
-                </select>
-                <button id="submitBrew" class="form-control " type="submit">Start your brew!</button>
-
-
+                <input type="text" id="newName" class="text-center select" placeholder="New Brew suggestion">
+                    <label for="newRoast"></label>
+                    <select class="selectBox select " id="newRoast">
+                        <option>light</option>
+                        <option>medium</option>
+                        <option>dark</option>
+                    </select>
+                    <button id="submitBrew" class="form-control w-50 brewButton mx-auto m-1" type="submit">Send Suggestion!</button>
             </form>
 
 
 
         </div>
 <!--this displays the coffee-->
-        <div class="card p-0 ml-2 col">
+        <div class="cardDisplay p-0 ml-2 col">
             <img class="card-img-top p-0" src="img/latte.jpg" alt="Card image cap">
             <div class="card-body">
-                <div class="card-text">
-                    <div id="coffees" >Coffees Here</div>
+                <div class="card-text ">
+                    <div id="coffees" ></div>
                     <div class="coffeeNames" id="name"></div>
                     <div id= "Roast" class="roast"></div>
                 </div>
             </div>
+            <p class="cardText">
+                Scroll through our list of brews. All cups are ground fresh to order.
+            </p>
+            <p class="cardTextSmall p-1">
+                *Some orders may take longer than 20 minutes. Orders requiring more than 20 minutes to prepare do not qualify for any discounts. Some brews may be out of stock. Coffee not guaranteed to be hot depending on wait time. Drink at your own risk.
+            </p>
         </div>
     </div>
 </div>
-
-
-<!--        <div id="coffees" >Coffees Here</div>-->
-<!--        <div class="coffeeNames" id="name"></div>-->
-<!--        <div id= "Roast" class="roast"></div>-->
 
 <script src="js/main.js"></script>
 </body>

@@ -1,5 +1,6 @@
 "use strict"
 
+
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
@@ -24,7 +25,7 @@ document.getElementById("coffees").style.display = "none";
 function renderCoffee(coffee) {
     var html = '<div class="coffee">';
     html += '<div class="coffeeNames">' + coffee.name + '</h2>';
-    html += '<div class="roast">' + coffee.roast + '</p>';
+    html += '<div class="roast">' + coffee.roast + ' roast'+ '</p>';
     html += '</div>';
 
     return html;
@@ -37,6 +38,7 @@ function addNewBrew(e) {
     newBrew.name = newCoffee.value;
     newBrew.roast = newRoast.value;
     newBrew.id = coffees.length + 1;
+    alert("We take all suggestions into consideration. Please allow 2-3 weeks for Costa Coffee to be fully stocked with your suggested brew!");
     coffees.push(newBrew);
     tbody.innerHTML = renderCoffees(coffees);
     return tbody.innerHTML = renderCoffee(coffee);
@@ -86,6 +88,7 @@ tbody.innerHTML = renderCoffees(coffees);
 roastSelection.addEventListener('change', updateCoffeesAuto);
 nameSelection.addEventListener('keyup', updateCoffeesAuto);
 submitButton.addEventListener("click", updateCoffeesAuto);
+submitButton.addEventListener('click', addNewBrew);
 
 tbody.innerHTML = renderCoffees(coffees);
 
