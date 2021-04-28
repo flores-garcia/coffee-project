@@ -18,10 +18,10 @@ var coffees = [
     {id: 13, name: 'Italian', roast: 'dark'},
     {id: 14, name: 'French', roast: 'dark'},
 ];
-
+// hides coffees until a search is ran
 document.getElementById("coffees").style.display = "none";
 
-// Displays Coffee
+// displays Coffee
 function renderCoffee(coffee) {
     var html = '<div class="coffee">';
     html += '<div class="coffeeNames">' + coffee.name + '</h2>';
@@ -30,8 +30,7 @@ function renderCoffee(coffee) {
 
     return html;
 }
-
-// Adds new cofee
+// adds new coffee
 function addNewBrew(e) {
     e.preventDefault();
     var newBrew = {};
@@ -43,12 +42,7 @@ function addNewBrew(e) {
     tbody.innerHTML = renderCoffees(coffees);
     return tbody.innerHTML = renderCoffee(coffee);
 }
-
-
-
-
-
-// Ascending order
+// ascending order
 function renderCoffees(coffees) {
     var html = '';
     for(var i = 0; i < coffees.length; i++) {
@@ -56,7 +50,7 @@ function renderCoffees(coffees) {
     }
     return html;
 }
-// Submit button Auto
+// auto update function
 function updateCoffeesAuto(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = nameSelection.value;
@@ -72,8 +66,6 @@ function updateCoffeesAuto(e) {
     tbody.innerHTML = renderCoffees(filteredCoffees);
     document.getElementById("coffees").style.display = "block";
 }
-
-
 // Variables and events
 var newCoffee = document.querySelector('#newName')
 var newRoast = document.querySelector('#newRoast')
@@ -82,15 +74,13 @@ var submitButton = document.querySelector('#submitBrew');
 var nameSelection = document.querySelector('#name-selection');
 var roastSelection = document.querySelector('#roast-selection');
 
-// Do not delete
-tbody.innerHTML = renderCoffees(coffees);
 
 roastSelection.addEventListener('change', updateCoffeesAuto);
 nameSelection.addEventListener('keyup', updateCoffeesAuto);
 submitButton.addEventListener("click", updateCoffeesAuto);
 submitButton.addEventListener('click', addNewBrew);
 
-tbody.innerHTML = renderCoffees(coffees);
+// tbody.innerHTML = renderCoffees(coffees);
 
 
 

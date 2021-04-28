@@ -23,7 +23,6 @@ body {
 .coffee-container{
     background-color: rgba(255, 255, 255, 0.7);
     padding: 5px;
-    /*height: 450px;*/
 }
 .container-fluid {
     padding: 25px 25px 5px;
@@ -49,7 +48,6 @@ body {
     font-family: 'Special Elite', cursive;
     text-shadow:1px 5px 8px #000000, 1px 5px 8px #000000;
     padding: 0;
-
 }
 a{
     color: #d0d0d0;
@@ -81,15 +79,12 @@ a:hover{
     scroll-behavior: smooth;
     max-height: 250px;
 }
-
 .card-body::-webkit-scrollbar {
     display: none;
 }
-
 .cardDisplay {
     background-color: rgba(255, 255, 255, 0.7);
 }
-
 .select{
     font-family: 'Viga', sans-serif;
     font-size: 18px;
