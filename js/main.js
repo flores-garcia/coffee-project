@@ -66,6 +66,7 @@ function updateCoffeesAuto(e) {
     tbody.innerHTML = renderCoffees(filteredCoffees);
     document.getElementById("coffees").style.display = "block";
 }
+
 // Variables and events
 var newCoffee = document.querySelector('#newName')
 var newRoast = document.querySelector('#newRoast')
