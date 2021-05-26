@@ -79,19 +79,3 @@ roastSelection.addEventListener('change', updateCoffeesAuto);
 nameSelection.addEventListener('keyup', updateCoffeesAuto);
 submitButton.addEventListener("click", updateCoffeesAuto);
 submitButton.addEventListener('click', addNewBrew);
-
-// tbody.innerHTML = renderCoffees(coffees);
-
-
-
-
-
-
-
-
-
-
-
-
-
-

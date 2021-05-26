@@ -8,77 +8,77 @@
 </head>
 <body>
 <!--this is our nav bar-->
-    <nav class="navbar navbar-expand nav-bg p-1 d-flex w-100">
-        <a class="navbar-brand w-25" href="#"><img src="img/coffee-logo.png" class="logo-coffee ml-4"></a>
-        <h2 class="slogan w-100 justify-content-start">Coffee is always a good idea</h2>
-        <div class="navbar-nav">
-            <a class="nav-item p-2" href="#">Home</a>
-            <a class="nav-item p-2" href="#">Locations</a>
-            <a class="nav-item p-2" href="#">Pricing</a>
-            <a class="nav-item p-2" href="#">Shop</a>
-        </div>
-    </nav>
+<nav class="navbar navbar-expand nav-bg p-1 d-flex w-100">
+    <a class="navbar-brand w-25" href="#"><img src="img/coffee-logo.png" class="logo-coffee ml-4"></a>
+    <h2 class="slogan w-100 justify-content-start">Coffee is always a good idea</h2>
+    <div class="navbar-nav">
+        <a class="nav-item p-2" href="#">Home</a>
+        <a class="nav-item p-2" href="#">Locations</a>
+        <a class="nav-item p-2" href="#">Pricing</a>
+        <a class="nav-item p-2" href="#">Shop</a>
+    </div>
+</nav>
 <!--this is our main content-->
-    <div class= "container-fluid mx-auto">
-        <div class="row p-2">
-            <div class="coffee-container mr-4 col-6 p-3">
-                <h2 class="build w-100 justify-content-start">Build your perfect cup of java</h2>
-                <p>Build your coffee from scratch and we will have it ready for pick-up in 20 minutes or less!*</p>
-                <form>
-    <!--roast selection-->
-                    <h2 class="steps w-100 mb-4">Step 1: Select your roast <br>
-                        <label for="roast-selection"></label>
-                        <select class="select mt-3 w-50" id="roast-selection">
-                            <option>all</option>
-                            <option>light</option>
-                            <option>medium</option>
-                            <option>dark</option>
-                        </select>
-                        <br>
-                    </h2>
-    <!--this is our coffee search bar-->
-                    <div class="coffeeSearch pb-3 text-center mt-0" id="coffeeSearch">
-                        <h2 class="steps w-100 m-0">Step 2: Search for your brand</h2>
-                        <label for="name-selection" class="col-1 m-1"></label><br>
-                        <input type="text" class="select form-control mx-auto text-center w-50" autocomplete = "off" id="name-selection" placeholder="Type your Brew Name!">
-                    </div>
-    <!--Button-->
-                    <button type="button" class="btn brewButton d-flex ml-auto" data-toggle="button" aria-pressed="false" autocomplete="off">
-                        Select creamer, flavors & sizes ▶
-                    </button><br>
-                </form>
-    <!--Add new coffee-->
-                <h2 class="steps w-100">Suggest a new brew!</h2>
-                <form class="text-center">
-                    <input type="text" id="newName" class="text-center select" placeholder="New Brew suggestion">
-                    <label for="newRoast"></label>
-                    <select class="selectBox select " id="newRoast">
+<div class= "container-fluid mx-auto">
+    <div class="row p-2">
+        <div class="coffee-container mr-4 col-6 p-3">
+            <h2 class="build w-100 justify-content-start">Build your perfect cup of java</h2>
+            <p>Build your coffee from scratch and we will have it ready for pick-up in 20 minutes or less!*</p>
+            <form>
+                <!--roast selection-->
+                <h2 class="steps w-100 mb-4">Step 1: Select your roast <br>
+                    <label for="roast-selection"></label>
+                    <select class="select mt-3 w-50" id="roast-selection">
+                        <option>all</option>
                         <option>light</option>
                         <option>medium</option>
                         <option>dark</option>
                     </select>
-                    <button id="submitBrew" class="form-control w-50 brewButton mx-auto m-1" type="submit">Send Suggestion!</button>
-                </form>
-            </div>
-    <!--this displays the coffee-->
-            <div class="cardDisplay p-0 ml-2 col">
-                <img class="card-img-top p-0" src="img/latte.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <div class="card-text ">
-                        <div id="coffees" ></div>
-                        <div class="coffeeNames" id="name"></div>
-                        <div id= "Roast" class="roast"></div>
-                    </div>
+                    <br>
+                </h2>
+                <!--this is our coffee search bar-->
+                <div class="coffeeSearch pb-3 text-center mt-0" id="coffeeSearch">
+                    <h2 class="steps w-100 m-0">Step 2: Search for your brand</h2>
+                    <label for="name-selection" class="col-1 m-1"></label><br>
+                    <input type="text" class="select form-control mx-auto text-center w-50" autocomplete = "off" id="name-selection" placeholder="Type your Brew Name!">
                 </div>
-                <p class="cardText">
-                    Scroll through our list of brews. All cups are ground fresh to order.
-                </p>
-                <p class="cardTextSmall p-1">
-                    *Some orders may take longer than 20 minutes. Orders requiring more than 20 minutes to prepare do not qualify for any discounts. Some brews may be out of stock. Coffee not guaranteed to be hot depending on wait time. Drink at your own risk.
-                </p>
+                <!--Button-->
+                <button type="button" class="btn brewButton d-flex ml-auto" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    Select creamer, flavors & sizes ▶
+                </button><br>
+            </form>
+            <!--Add new coffee-->
+            <h2 class="steps w-100">Suggest a new brew!</h2>
+            <form class="text-center">
+                <input type="text" id="newName" class="text-center select" placeholder="New Brew suggestion">
+                <label for="newRoast"></label>
+                <select class="selectBox select " id="newRoast">
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
+                </select>
+                <button id="submitBrew" class="form-control w-50 brewButton mx-auto m-1" type="submit">Send Suggestion!</button>
+            </form>
+        </div>
+        <!--this displays the coffee-->
+        <div class="cardDisplay p-0 ml-2 col">
+            <img class="card-img-top p-0" src="img/latte.jpg" alt="Card image cap">
+            <div class="card-body">
+                <div class="card-text ">
+                    <div id="coffees" ></div>
+                    <div class="coffeeNames" id="name"></div>
+                    <div id= "Roast" class="roast"></div>
+                </div>
             </div>
+            <p class="cardText">
+                Scroll through our list of brews. All cups are ground fresh to order.
+            </p>
+            <p class="cardTextSmall p-1">
+                *Some orders may take longer than 20 minutes. Orders requiring more than 20 minutes to prepare do not qualify for any discounts. Some brews may be out of stock. Coffee not guaranteed to be hot depending on wait time. Drink at your own risk.
+            </p>
         </div>
     </div>
+</div>
 <script src="js/main.js"></script>
 </body>
 </html>
